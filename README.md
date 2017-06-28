@@ -1,7 +1,7 @@
 dump-http
 =========
 
-[![Build Status](https://img.shields.io/travis/ParosSrl/dump-http.svg)](https://img.shields.io/travis/ParosSrl/dump-http.svg)
+[![Build Status](https://img.shields.io/travis/ParosSrl/dump-http.svg)](https://travis-ci.org/ParosSrl/dump-http)
 
 `dump-http` is an HTTP dump server. It could be useful for testing purposes (e.g.: testing third-party modules/libs/components HTTP behaviuor).
 
