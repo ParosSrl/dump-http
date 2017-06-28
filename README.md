@@ -32,7 +32,7 @@ dump-http --port 8080
 
 ##### Programmatic
 
-```bash
+```js
 const dump = require('dump-http')
 
 dump().listen(3000, '0.0.0.0', () => console.log('Dump server is listening in port 0.0.0.0:3000'))
