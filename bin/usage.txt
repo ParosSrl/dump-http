@@ -1,0 +1,6 @@
+Usage: dump-http {OPTIONS}
+
+Options:
+
+  --port <port>  Port to use [3000]
+  --host <host>  Host to use [0.0.0.0]
