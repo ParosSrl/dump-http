@@ -15,7 +15,7 @@ Basically, on every HTTP requests `dump-http` will:
 ### Install
 
 ```bash
-$ npm install -g ParosSrl/dump-http
+npm install -g ParosSrl/dump-http
 ```
 
 ### Usage
