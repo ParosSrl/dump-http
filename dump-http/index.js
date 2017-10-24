@@ -1,11 +1,10 @@
 const http = require('http')
 const getRawBody = require('raw-body')
 const debug = require('debug')('dump:main')
-const log = require('./lib/log')
-const format = require('./lib/format')
-const getRequestLine = require('./lib/request-line')
-const getRawHeaders = require('./lib/raw-headers')
-
+const log = require('../lib/log')
+const format = require('../lib/format')
+const getRequestLine = require('../lib/request-line')
+const getRawHeaders = require('../lib/raw-headers')
 
 module.exports = () => http.createServer(handler)
 

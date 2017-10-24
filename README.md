@@ -50,6 +50,12 @@ npm test
 npm run coverage
 ```
 
+### Test cli
+
+```bash
+node bin/cli --port 8102
+```
+
 ### License
 
 Copyright 2017 Paros s.r.l.
