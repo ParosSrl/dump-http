@@ -27,7 +27,7 @@ npm install -g ParosSrl/dump-http
 ```bash
 # Start a dump-http server on port 8080
 
-dump-http --port 8080 --protocol http
+dump-http --port 8080
 ```
 
 ```bash
