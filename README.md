@@ -27,7 +27,13 @@ npm install -g ParosSrl/dump-http
 ```bash
 # Start a dump-http server on port 8080
 
-dump-http --port 8080
+dump-http --port 8080 --protocol http
+```
+
+```bash
+# Start a dump-https server on port 8433
+
+dump-http --port 8433 --protocol https
 ```
 
 ##### Programmatic
@@ -54,6 +60,14 @@ npm run coverage
 
 ```bash
 node bin/cli --port 8102
+```
+
+### SSL server certificate creation
+
+When use https protocol you need an SSL certificate.  
+There's already one generated in `cert` folder, but, for create a new one you can use *openssl*:  
+```
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 3650
 ```
 
 ### License

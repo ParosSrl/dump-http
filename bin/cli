@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const dumpHttp = require('../dump-http')
+const dumpHttps = require('../dump-https')
 const fs = require('fs')
 const chalk = require('chalk')
 const minimist = require('minimist')
@@ -21,10 +22,12 @@ let protocol = argv.protocol || 'http'
 
 if (protocol === 'http') {
   dumpHttp().listen(port, host, () => {
-    log.info('Listen', `Dump server listening on port ${green(host)}:${white(port)}`)
+    log.info('Listen', `Dump server http listening on port ${green(host)}:${white(port)}`)
   })
 } else if (protocol === 'https') {
-  log.warn('aaaaa')
+  dumpHttps().listen(port, host, () => {
+    log.info('Listen', `Dump server https listening on port ${green(host)}:${white(port)}`)
+  })
 } else {
   log.error('Protocol ' + protocol + ' unhandled')
 }
