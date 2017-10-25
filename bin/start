@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const dump = require('..')
+const dumpHttp = require('../dump-http')
 const chalk = require('chalk')
 const log = require('../lib/log')
 
@@ -10,6 +10,6 @@ const white = chalk.white.bold
 let port = +process.env.PORT || 3000
 let host = +process.env.HOST || '0.0.0.0'
 
-dump().listen(port, host, () => {
+dumpHttp().listen(port, host, () => {
   log.info('Listen', `Dump server listening on port ${green(host)}:${white(port)}`)
 })

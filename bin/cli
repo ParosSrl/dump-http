@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const dump = require('..')
+const dumpHttp = require('../dump-http')
+const dumpHttps = require('../dump-https')
 const fs = require('fs')
 const chalk = require('chalk')
 const minimist = require('minimist')
@@ -17,10 +18,20 @@ if (argv.help) {
 
 let port = +argv.port || 3000
 let host = argv.host || '0.0.0.0'
+let protocol = argv.protocol || 'http'
 
-dump().listen(port, host, () => {
-  log.info('Listen', `Dump server listening on port ${green(host)}:${white(port)}`)
-})
+if (protocol === 'http') {
+  dumpHttp().listen(port, host, () => {
+    log.info('Listen', `Dump server http listening on port ${green(host)}:${white(port)}`)
+  })
+} else if (protocol === 'https') {
+  dumpHttps().listen(port, host, () => {
+    log.info('Listen', `Dump server https listening on port ${green(host)}:${white(port)}`)
+  })
+} else {
+  log.error('Protocol ' + protocol + ' unhandled')
+}
+
 
 function printUsageAndExit () {
   let usage = fs.createReadStream(__dirname + '/usage.txt')

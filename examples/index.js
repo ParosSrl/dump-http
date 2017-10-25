@@ -1,3 +1,3 @@
-const dump = require('..')
+const dumpHttp = require('../bin/dump-http')
 
-dump().listen(3000, () => console.log('Dump server is listening on port 3000'))
+dumpHttp().listen(3000, () => console.log('DumpHttp server is listening on port 3000'))

@@ -1,6 +1,6 @@
 const request = require('supertest')
 const test = require('ava')
-const dump = require('..')
+const dump = require('../dump-http')
 
 
 test.cb('should echo a complete request dump (request line, headers and body)', t => {

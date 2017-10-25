@@ -6,7 +6,7 @@
   "scripts": {
     "test": "ava --verbose",
     "dev": "DEBUG=dump* ./bin/start",
-    "start": "./bin/start",
+    "start": "bin/cli",
     "coverage": "nyc npm t"
   },
   "bin": {
