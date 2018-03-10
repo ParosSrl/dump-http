@@ -65,7 +65,7 @@ node bin/cli --port 8102
 ### SSL server certificate creation
 
 When use https protocol you need an SSL certificate.  
-There's already one generated in `cert` folder, but, for create a new one you can use *openssl*:  
+There's already one generated in `cert` folder, but, to create a new one you can use *openssl*:  
 ```
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 3650
 ```
