@@ -16,16 +16,16 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.25.0",
-    "nyc": "^11.4.1",
-    "supertest": "^3.0.0"
+    "nyc": "^13.0.1",
+    "supertest": "^3.3.0"
   },
   "dependencies": {
-    "chalk": "^2.3.2",
-    "common-tags": "^1.7.2",
-    "debug": "^3.1.0",
+    "chalk": "^2.4.1",
+    "common-tags": "^1.8.0",
+    "debug": "^4.1.0",
     "minimist": "^1.2.0",
-    "moment": "^2.21.0",
-    "raw-body": "^2.3.2"
+    "moment": "^2.22.2",
+    "raw-body": "^2.3.3"
   },
   "engines": {
     "node": ">=7.6.0"
